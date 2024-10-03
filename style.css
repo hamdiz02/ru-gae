@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.vidcon{
+    z-index: -1;
+    position:absolute;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.vidcon video{
+    min-width:  100%;
+    min-height: 100%;
+}
+.yesbtn{    
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    width: 15%;
+    height: 10%;
+}
+.nobtn{
+    position: absolute;
+    left: 55%;
+    top: 45%;
+    width: 10%;
+    height: 10%;
+    z-index: 3;
+}
+.btn{
+    color:rgb(30, 30, 30);
+    background: transparent 50%;
+    border: 0;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    border: solid green 2px;
+    font-size: 120%;
+    font-weight: bold;
+}
+.btn:hover{
+    opacity: 75%;
+    border: solid rgb(161, 53, 89) 3px;
+    color: rgb(207, 103, 66);
+    cursor: pointer;
+}
+.nav{
+    background-image: url('rb.jpg');
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    height: 10%;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: rgb(30, 30, 30);
+    z-index: 1;
+}
+.mainvid{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+    border-radius: 5px;
+    z-index: 1;
+}
+.mainvid video{
+    border-radius: 5px;
+    width: 100%;
+    min-height: 100%;
+}
+.img{
+    background-image: url('gae.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    top: 10%;
+    right:0% ;
+    border-radius: 5px;
+    z-index: 1;
+}
+.img2{
+    background-image: url('gae.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    top: 10%;
+    left: 0% ;
+    border-radius: 5px;
+    z-index: 1;
+}
+.img2:hover{
+    border: solid rgb(30, 30, 30) 2px;
+}
+.img:hover{
+    border: solid rgb(30, 30, 30) 2px;
+}
+.tex{
+    color: rgb(30, 30, 30);
+    text-align: center;
+    font-size: 180%;
+}
+@media all and (max-width : 650px) {
+    .yesbtn .btn{
+        font-size: 100%;
+    }
+    .yesbtn{
+        width: 25%;
+        height: 10%;
+        left: 7%;
+    }
+    .nobtn{
+        width: 25%;
+        height: 10%;
+        right: 7%;
+    }
+    .mainvid{
+        top: 15%;
+        width: 90%;
+        height: 50%;
+        transition: 0.5s;
+        left: 5%;
+    }
+    .img{
+        position: absolute;
+        width: 45%;
+        height: 25%;
+        top: 80%;
+        transition: 0.5s;
+    }
+    .img2{
+        width: 45%;
+        height: 25%;
+        top: 80%;
+        transition: 0.5s;
+    }
+    .vidcon{
+        background-image: url('rb.jpg');
+
+    }
+    .vidcon video{
+        height: 100%;
+        width: 100%;
+    }
+    .nav{
+        height: 20%;
+    }
+}    
